@@ -27,7 +27,6 @@ describe Pago do
 
   it 'Si el pago es una membresia, activar la membresia' do
     mi_producto = Producto.new(tipo: 'membresia')
-    Membresia.any_instance.should_receive
     Pago.new(producto: mi_producto).usuario.should be_socio
   end
 
